@@ -12,9 +12,9 @@ public class Main {
 //        System.out.println();
 
         Departament bh = new Departament("BH");
-        bh.addEmployee("vardas pavarde");
+        bh.addEmployee(4144,"vardas pavarde");
         bh.addEmployee("vardas2 pavarde2");
-        bh.getEmployeesList();
+        bh.getEmployeesList("Boning Hall");
 
         bh.addEmployeeIssue(0,"10/02/2018","helmet");
         bh.addEmployeeIssue(0,"13/02/2018","5in boning knife");
@@ -23,8 +23,18 @@ public class Main {
         bh.addEmployeeIssue(1,"09/02/2018","5in boning knife");
 
         bh.getEmployeeIssues(0);
-        //bh.getEmployeeIssues(1);
+        bh.getEmployeeIssues(1);
 
+        Factory abpClones=new Factory("ABP Clones");
+        abpClones.addEmployee("BH",333,"name");
+        abpClones.addEmployee("BH",444,"name222");
+
+        abpClones.addEmployee("AB",160,"Romualdas Debesiunas");
+
+        abpClones.getDepartamentsList();
+
+        abpClones.getEmployeesList("BH");
+        abpClones.getEmployeesList("AB");
 
     }
 }

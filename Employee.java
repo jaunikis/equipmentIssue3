@@ -4,10 +4,18 @@ import java.util.ArrayList;
 
 public class Employee {
     private String name;
+    private int fobNumber;
     private ArrayList<Issues> issuesToEmployee;
 
     public Employee(String name) {
         this.name = name;
+        this.fobNumber=0;
+        this.issuesToEmployee = new ArrayList<Issues>();
+    }
+
+    public Employee(int fobNumber,String name) {
+        this.name = name;
+        this.fobNumber = fobNumber;
         this.issuesToEmployee = new ArrayList<Issues>();
     }
 
@@ -24,5 +32,9 @@ public class Employee {
 
     public String getName() {
         return name;
+    }
+
+    public int getFobNumber(){
+        return fobNumber;
     }
 }
