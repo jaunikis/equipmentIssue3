@@ -23,7 +23,7 @@ public class Main {
         bh.addEmployeeIssue(1,"09/02/2018","5in boning knife");
 
         bh.getEmployeeIssues(0);
-        bh.getEmployeeIssues(1);
+        //bh.getEmployeeIssues(1);
 
 
     }
