@@ -16,8 +16,14 @@ public class Main {
         bh.addEmployee("vardas2 pavarde2");
         bh.getEmployeesList();
 
-        bh.addEmployeeIssue(0,"7in trimming knife");
+        bh.addEmployeeIssue(0,"10/02/2018","helmet");
+        bh.addEmployeeIssue(0,"13/02/2018","5in boning knife");
+        bh.addEmployeeIssue(0,"15/02/2018","7in trimming knife");
+
+        bh.addEmployeeIssue(1,"09/02/2018","5in boning knife");
+
         bh.getEmployeeIssues(0);
+        bh.getEmployeeIssues(1);
 
 
     }

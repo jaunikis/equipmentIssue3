@@ -27,8 +27,8 @@ public class Departament {
         employees.get(empIndex).getEmployeeIssues();
     }
 
-    public void addEmployeeIssue(int empIndex,String issueString){
-        employees.get(empIndex).addEmployeeIssue(issueString);
+    public void addEmployeeIssue(int empIndex,String date,String item){
+        employees.get(empIndex).addEmployeeIssue(date,item);
     }
 
 }
